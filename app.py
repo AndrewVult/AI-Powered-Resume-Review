@@ -3,7 +3,7 @@ import pdfplumber
 from openai import OpenAI
 
 # Initialize OpenAI client
-client = OpenAI()
+client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
 # Function to extract text from uploaded PDF resumes
 def extract_text_from_pdf(uploaded_file):
