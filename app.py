@@ -27,7 +27,7 @@ def analyze_resume(resume_text, job_description):
     """
 
     response = client.chat.completions.create(
-        model="gpt-4o-mini",   # can also use "gpt-4.1-mini" or "gpt-3.5-turbo"
+        model="gpt-3.5-turbo",   # can also use "gpt-4.1-mini" or "gpt-3.5-turbo"
         messages=[
             {"role": "system", "content": "You are a professional HR assistant."},
             {"role": "user", "content": prompt}
