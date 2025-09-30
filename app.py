@@ -74,4 +74,3 @@ if uploaded_files and job_description:
     df.to_csv(csv_buffer, index=False)
     st.download_button("⬇️ Download Results as CSV", data=csv_buffer.getvalue(),
                        file_name="resume_screening_results.csv", mime="text/csv")
-```
