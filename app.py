@@ -1,4 +1,3 @@
-```python
 import streamlit as st
 import pdfplumber
 from openai import OpenAI, OpenAIError
@@ -72,5 +71,3 @@ if st.button("Analyze Resumes"):
                 analysis = analyze_resume(resume_text, job_description)
                 st.subheader(f"Results for {uploaded_file.name}")
                 st.write(analysis)
-```
-
